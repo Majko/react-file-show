@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import MultiPageImage from "./Components/nove/MultiPageImage";
 import VisFileSelect from "./Components/nove/VisFileSelect";
 
 function App() {
@@ -34,6 +35,9 @@ function App() {
             <Switch>
               <Route path="/showmyimgs">
                 <VisFileSelect />
+              </Route>
+              <Route path="/multipage">
+                <MultiPageImage />
               </Route>
             </Switch>
           </div>

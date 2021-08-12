@@ -1,6 +1,12 @@
 import { Document, Page } from "react-pdf/dist/esm/entry.webpack";
 import { useEffect, useState } from "react";
 
+/**
+ * @description Component renders content of PDF file (.pdf). Allows pagination.
+ * @param {String} param0 fileUrl - url of the image file to be presented. In case of local file
+ * the valus submitted should be created by URL.createObjectURL(file)
+ * @returns none
+ */
 function PdfDocument({ fileUrl }) {
     const [numPages, setNumPages] = useState(null);
     const [pageNumber, setPageNumber] = useState(1);
