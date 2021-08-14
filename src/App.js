@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import MultiPageImage from "./Components/nove/MultiPageImage";
-import VisFileSelect from "./Components/nove/VisFileSelect";
+import MultiPageImage from "./Components/visualcontent/MultiPageImage";
+import VisFileSelect from "./Components/visualcontent/VisFileSelect";
 
 function App() {
   

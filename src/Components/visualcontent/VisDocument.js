@@ -12,9 +12,14 @@ function VisDocument({ fileName, fileUrl }) {
 
     // check the type of document
     const docType = (filename) => {
+        const allowedExtentions = ['pdf', 'png', 'jpg', 'jpeg']
         const lastDot = filename.lastIndexOf(".");
         const ext = filename.substring(lastDot + 1);
-        return ext;
+        //check if extention is among the allowe ones
+        if (allowedExtentions.includes(ext))
+            return ext;
+        else
+            throw new Error('File type is not allowed!')
     };
 
     return (
